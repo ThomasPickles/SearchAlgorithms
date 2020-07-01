@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace SearchAlgorithms
 {
@@ -6,7 +7,12 @@ namespace SearchAlgorithms
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var arr = new[] { 1, 2, 5, 6, 8 };
+
+            int index = RotatedArray.FindElement(arr);
+                                    
+            Console.WriteLine(index);
+
         }
     }
 }
